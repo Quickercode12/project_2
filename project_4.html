@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .nav {
+        display: flex;
+        width: 100%;
+        border: 1px solid #000;
+        background-color: #000;
+      }
+
+      .nav .item {
+        padding: 20px 30px;
+        color: #ffffff;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .nav:has(.item:hover) .item:not(:hover) {
+        color: aqua;
+        transform: scale(0.8);
+        transition: 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="item">Home</div>
+      <div class="item">Display</div>
+      <div class="item">Picture</div>
+      <div class="item">Video</div>
+    </div>
+  </body>
+</html>

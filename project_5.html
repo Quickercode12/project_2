@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 50%;
+        height: 30vh;
+        border: 1px solid #000;
+        margin: 2rem 10rem;
+        border-radius: 2px;
+        display: flex;
+      }
+
+      b {
+        width: 30%;
+        height: 3.6vh;
+        border: 1px solid #000;
+        margin: 5rem 6rem;
+        cursor: pointer;
+        overflow: hidden;
+        text-align: center;
+      }
+
+      .text {
+        margin-top: 5px;
+        position: relative;
+        animation: move 4s infinite;
+      }
+
+      @keyframes move {
+        0% {
+          top: 0px;
+        }
+
+        25% {
+          top: -20px;
+        }
+
+        50% {
+          top: -40px;
+        }
+
+        75% {
+          top: -60px;
+        }
+
+        100% {
+          top: -80px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <b>
+        <div class="text">
+          hello my new<br />
+          kaise ho sabhi<br />
+          every one is<br />
+          done bye too<br />
+          i am ok bhi <br />
+        </div>
+      </b>
+    </div>
+  </body>
+</html>
